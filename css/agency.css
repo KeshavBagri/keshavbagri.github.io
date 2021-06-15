@@ -46,15 +46,15 @@ a {
 }
 @keyframes typewriter1{
   from{width: 0;}
-  to{width: 18em;}
+  to{width: 29ch;}
 }
 @keyframes typewriter2{
   from{width: 0;}
-  to{width: 10em;}
+  to{width: 14ch;}
 }
 @keyframes typewriter3{
   from{width: 0;}
-  to{width: 20em;}
+  to{width: 34ch;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color:transparent}
@@ -244,10 +244,10 @@ header.masthead {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-description {
-      font-size: 18px;
+      font-size: 22px;
       line-height: 22px;
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -255,18 +255,18 @@ header.masthead {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
-      margin-bottom: 25px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      margin-bottom: 15px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 40px;
+      font-size: 38px;
       font-style: italic;
       line-height: 40px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-description {
       font-size: 30px;
@@ -274,7 +274,7 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 75px;
+      font-size: 55px;
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 30px;
