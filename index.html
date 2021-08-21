@@ -103,9 +103,7 @@
           <div class="col-md-6">
             <p class="text-muted">Hi there! I am a final year undergraduate student of the Department of Mechanical Engineering, Indian Institute of Technology, Kharagpur. 
               From the very beginning, I was passionate about automobiles which led me to pursue mechanical engineering in one of the elite universities of the nation.
-              Currently, I am working as a summer intern with the CTO Office in KPIT Technologies (India) on the reduction of memory footprint & inference time for DL models 
-              in automotive applications. 
-              Parallel to this, I am working as a UG Research Assistant to Dr. Jeffrey P. Chrstos, Centre for Automotive Research (CAR), The Ohio State University. 
+              Currently, I am working as a UG Research Assistant to Dr. Jeffrey P. Chrstos, Centre for Automotive Research (CAR), The Ohio State University. 
               <br>
               I am a die-hard Formula 1 fan with Max Verstappen being my favorite driver and Scuderia Ferrari, my favorite constructor. When it comes to circuits, I prefer Marina Bay
               Circuit and Circuit de Monaco. I like to play PC games like GTA, F1 and FPS games like Call of Duty, quite a lot. Coming to music, Alan Walker, Maroon V and 
@@ -249,6 +247,38 @@
               </ul></p>
           </div>
           <hr>
+          <br>
+          <div class="row text-center">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+              <center>
+              <span>
+                <img  src="img/kpit.jpg" style="width: 40%;"alt="">
+              </span>
+            </center>
+              <h4 class="service-heading">KPIT Technologies Ltd.</h4>
+              <h3 class="section-subheading text-muted">Summer Intern (May 2021 - Jul 2021)</h3>
+              <p class="text-muted" style="text-align: left;">
+                As a summer intern for a duration of 3 months, I worked on the memory footprint and inference time reduction for Deep
+                Learning models used in automotive applications. I used AI compilers like TVM, Glow and MATLAB to generate deployable 
+                executables for the target hardware and developed a consolidated method to facilitate easier deployment of DL models. 
+                <br>
+                <center>
+                  <span>
+                <a class="portfolio-link" data-toggle="modal" href="#summer">
+                <button class="btn btn-primary" type="button">
+                  Read More</button>
+                </a>
+                </span>
+                </center>
+                <br>
+                <center>
+                <b>Website:</b> <a class="resume" href="https://www.kpit.com/about/" target="_blank">KPIT</a> | 
+                [<a class="resume" href="kpit.pdf" target="_blank">Certificate</a>]</center>
+                </ul></p>
+            </div>
+            <hr>
         <div class="row text-center">
           <div class="col-md-2">
           </div>
@@ -1315,6 +1345,55 @@
       </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="summer" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Summer Intern</h2>
+                  <p class="item-intro text-muted">KPIT Technologies Ltd, Pune, India
+                  </p>
+                  <p><a class="resume" href="kpit.pdf">Certificate</a></p>
+                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">-->
+                  <p style="text-align: left;">
+                    My primary responsibility during the internship was to explore the APIs of AI compilers - TVM, Glow and MATLAB and leverage them to generate
+                    hardware-specific and optimized executable bundles which can be easily deployed on hardware backends. Deep learning models are significantly
+                    heavy when it comes to memory usage and time required to compute the results. This makes their deployment on edge devices, having lesser RAM
+                    and ROM, tedious. The existing DL frameworks namely, TensorFlow, PyTorch and ONNX provide support for training and deployment on CPUs and GPUs.
+                    However, when it comes to edge devices with low power capabilities, the optimization of these models becomes a challenging task.  
+                  </p>
+                  <p style="text-align: left;">
+                    In the first part of the internship, I leveraged the AI compilers to optimize well-known pretrained DL models in existing frameworks for LLVM 
+                    and GPU devices. The customization options vary with respect to the compilers and each of them had different optimization schemes. 
+                    <br>
+                    The models were selected or created so as to ensure that different types of architectures are considered. Then we decided the performance metrics
+                    which were then used to observe the relative performance of these compilers and frameworks. These metrics were essentially the representatives of 
+                    the memory consumption and inference time of the selected models. Finally, we observed the relative behaviour of these compilers in terms of the 
+                    performance metrics, their compatibility and efficiency to optimize the different model architectures and hardware-specific deployment capabilities
+                    they offered. The comparison performed was qualitative as well as quantitative so as to provide a better method of decision-making as per the user's
+                    application.  
+                    <br>
+                    The codes were based on C++ and Python, varying slightly with respect to the compilers' and frameworks' API.
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="portfolio-modal modal fade" id="ati" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1337,14 +1416,14 @@
                   <p style="text-align: left;">
                     As a part of this internship, I was required to explore state-of-the-art SLAM algorithms and select the one feasible and favourable 
                     that can be applied to a variety of existing datasets that the Autonomy team possessed. During the entire course of this internship, 
-                    primarily, I focused on OctoMap to visualise 3D probabilistic maps in an efficient manner and Particle Filter SLAM or Gmapping SLAM.
+                    primarily, I focused on OctoMap to visualise 3D probabilistic maps in an efficient manner and Particle Filter SLAM or Gmapping SLAM. 
                   </p>
                   <p style="text-align: left;">
                     In the first part of the internship, I studied about OctoMap and experimented on a couple of open-source datasets available on University of 
                     Freiburg's website. Next, I explored SLAM algorithms like IMLS SLAM, LOAM SLAM, EKF SLAM and Particle Filter SLAM. Based on the extent and 
                     efficiency of the algorithms, we finalized the Particle Filter SLAM for implementation. The existing algorithm that the team used was scan-matching 
                     with a predefined grid. The team was in the possession of multiple lidar and wheel odometry datasets collected from their robot subjected to a variety 
-                    of environments. <br>
+                    of environments.  <br>
                     After the implementation of the algorithm, we checked for its consistency using the datasets. We got satisfactory results with the initial algorithm. 
                     We tried out a couple of resampling algorithms and as expected, the quality of the generated map improved significantly. The quality of the map was 
                     calculated using the entropy function. Also, I studied the effect of variation in parameters like number of particles, motion noise, distance filters 
