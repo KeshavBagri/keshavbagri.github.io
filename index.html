@@ -1137,9 +1137,73 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Fault Tolerant Control System for Electric Vehicles</h2>
                   <p class="item-intro text-muted">Supervisor: <a class="resume" href="https://iitkgp.irins.org/profile/158376">Dr. Somnath Sengupta</a>, 
-                    Advanced Technology Development Center, IIT KGP</p>
+                    Advanced Technology Development Center, IIT KGP
+                  </p>
+
+                  <p style="text-align: left;" class="item-intro text-muted">
+                    Thesis available at request. Kindly fill out the contact form along with the reason for your request.
+                  </p>
+                  
+                  <hr size="10">
                   <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">-->
-                  <p>To be updated soon. Stay tuned!</p>
+                  <p style="text-align: left;">
+                    The automotive industry is slowly witnessing a transition from fossil fuel powered vehicles to electric or hybrid vehicles. 
+                    The challenges to the EV industry are to achieve high efficiency, robustness, low cost electronics, and electrical machines 
+                    as well. Difference in the inherent characteristic between IC engines and electric motors point to the absolute necessity of
+                    separate control architectures for the 2 powertrains. 
+                  </p>
+
+                  <p style="text-align: left;">
+                    In the first phase of the project, I developed a complete electro-mechanical model by modifying the existing multibody model built 
+                    using Simscape and Simulink to adapt to the 4WD architecture. I incorporated technical features such as Antilock Braking System (ABS),
+                    and regenerative braking followed by the integration of the 2 setups using a tuned pre-compensator transfer function. This was done to
+                    ensure maximum energy recuperation while maintaining the desired wheel slip ratio for all the wheels. The desired
+                    slip ratio was estimated during runtime using the Burckhardt tire model. I selected certain faults based on the likelihood of occurrence
+                    and impact on the vehicle dynamics, and then studied their impact individually using multiple open and closed loop maneuvers. 
+                    Analysis of the results under faults led to the proposal of the architecture of a fault tolerant control system consisting of a Fault 
+                    Diagnostic Unit (FDU) and a Fault Tolerant Control Unit (FTCU). 
+                  </p>
+
+                  <p style="text-align: left;">
+                    The complexity and interdependence between different systems used in EVs have to be identified in order to develop an efficient controller 
+                    which serves the purpose of tracking the desired reference and offers robustness against different operating conditions that the vehicle 
+                    can encounter. In the last phase of the project, I explored existing control strategies that aim to regulate the vehicle's stability under
+                    normal and/or faulty conditions, followed by identifying the effectiveness and limitations of the same. Substantial literature survey led 
+                    to the selection of sliding mode control (SMC) law due to its associated benefits such as ease of implementation, robustness, etc. I implemented
+                    an existing conventional PI - SMC based controller and tested its ability to track the reference variables under different maneuvers. 
+                    <br> 
+                    I isolated the limitations of this scheme in terms of its inability to adhere to the dynamic constraints of the actuators. Along with this,
+                    the controller remains oblivious to this issue which leads to accumulation of error over time, as suggested by results. In order to mitigate
+                    this problem, I developed a novel constraint-aware PI - SMC based controller by modifying the existing one such that it respects the actuators'
+                    constraints and iteratively adjusts the remaining control commands to minimize the tracking error. I performed a qualitative as well as a
+                    quantitative comparison (using RMSE) between the 2 controllers. Lastly, in order to use the proposed scheme for fault tolerant control, I
+                    explored the possibility of using this along with a reconfigurable control allocator to cater to actuator faults. 
+                  </p>
+
+                  <h4 style="text-align: left;">Key References</h4>
+                  <ol class="list-inline" style="text-align: left;">
+                    <li>
+                      <a class="resume" href="https://www.sae.org/publications/technical-papers/content/2020-01-0846/"
+                                    target="_blank">Integrated Regenerative Braking System and Anti-Lock Braking System for Hybrid Electric Vehicles & Battery 
+                                    Electric Vehicles </a>
+                    </li>
+                    <br>
+                    <li>
+                      <a class="resume" href="http://www.nt.ntnu.no/users/skoge/prost/proceedings/ifac2014/media/files/1893.pdf" target="_blank">
+                        Fault tolerant control for an electric 4WD vehicle's path tracking with active fault diagnosis</a>
+                    </li>
+                    <br>
+                    <li>
+                      <a class="resume" href="https://books.google.com/books?hl=en&lr=&id=eoy19aWAjBgC&oi=fnd&pg=PR7&dq=Vehicle+dynamics+and+control.+rajamani&ots=8xbObdQ7gk&sig=DGdBjfkpk9XqDOzHeJmwonqyjw4" target="_blank">
+                        Rajesh Rajamani. Vehicle dynamics and control. Springer Science & Business Media, 2011</a>
+                    </li>
+                    <br>
+                    <li>
+                      <a class="resume" href="https://www.sciencedirect.com/science/article/pii/S0888327015005373?casa_token=Baw1Ng_Wcj4AAAAA:46vUOAjtqzD7i2Wro-2LpNL_HlMpK8E8bFGqgZUXjaqqEEZ_E1FOlHwM9o-Y5VzRzWObTTU8" target="_blank">
+                        Fault-tolerant control of electric vehicles with in-wheel motors using actuator-grouping sliding mode controllers</a>
+                    </li>
+                  </ol>
+
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close</button>
