@@ -31,6 +31,15 @@ a {
     transform: translateY(-20%);    
 }
 
+hr {
+  display: block;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style:inset;
+  border-width: 1px;
+}
 /* Animation */
 .anim-typewriter1{
   animation: typewriter1 4s steps(44) 1s 1 normal both,
