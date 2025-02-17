@@ -342,6 +342,14 @@ section .container {
   }
 }
 
+.portfolio-info img{
+  max-width: 100%;
+}
+
+.portfolio-info p{
+  text-align: justify;
+}
+
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
